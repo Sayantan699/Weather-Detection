@@ -19,7 +19,7 @@ const button = document.querySelector("button");
 button.addEventListener("click", (event) => {
   const place = document.getElementById("location").value;
   const weather = fetch(
-    `http://api.weatherapi.com/v1/current.json?key=3b6d23bb1cc040f7a09154546250201&q=${place}&aqi=no`
+    `https://api.weatherapi.com/v1/current.json?key=3b6d23bb1cc040f7a09154546250201&q=${place}&aqi=no`
   );
   const weatherinfo = document.getElementById("weatherInfo");
   const weatherinfo2 = document.getElementById("weatherInfo2");
