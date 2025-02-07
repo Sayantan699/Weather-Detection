@@ -1,4 +1,4 @@
-document.querySelector("button").addEventListener("click", () => {
+/*document.querySelector("button").addEventListener("click", () => {
   const place = document.getElementById("location").value;
   const prom = fetch(
     //Async task it takes time to execute
