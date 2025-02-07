@@ -30,5 +30,9 @@ button.addEventListener("click", (event) => {
       weatherinfo.innerHTML = `Today's Temperature: ${data.current.temp_c}°C`;
       weatherinfo2.innerHTML = `Wind Speed: ${data.current.wind_kph}`;
       weatherinfo3.innerHTML = `Wind Direction: ${data.current.wind_dir}`;
+    })
+    .catch((error) => {
+      console.error("Fetch error:", error);
+      weatherinfo.innerHTML = "Failed to fetch weather data.";
     });
 });
