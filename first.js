@@ -1,8 +1,8 @@
-/*document.querySelector("button").addEventListener("click", () => {
+document.querySelector("button").addEventListener("click", () => {
   const place = document.getElementById("location").value;
   const prom = fetch(
     //Async task it takes time to execute
-    `http://api.weatherapi.com/v1/current.json?key=3b6d23bb1cc040f7a09154546250201&q=${place}&aqi=yes`
+    `https://api.weatherapi.com/v1/current.json?key=3b6d23bb1cc040f7a09154546250201&q=${place}&aqi=yes`
   );
   function updatetemp(data) {
     const element = document.getElementById("weatherInfo");
